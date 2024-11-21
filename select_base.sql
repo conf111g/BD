@@ -100,11 +100,15 @@ FROM
     `shop`.`sales`
 WHERE
     (`sales`.`sdate` > '2024-08-31'
-	        AND `sales`.`sdate` < '2024-10-01')
-	        AND (NOT (`sales`.`sdate` > '2024-09-12'
-				        AND `sales`.`sdate` < '2024-09-16'))
-			        AND NOT cnum = 203 or (cnum=203) and (`sales`.`sdate` > '2024-09-30'
-					        AND `sales`.`sdate` < '2024-10-31');
+        AND `sales`.`sdate` < '2024-10-01')
+        AND (NOT (`sales`.`sdate` > '2024-09-12'
+        AND `sales`.`sdate` < '2024-09-16'))
+        AND NOT cnum = 203 or (cnum=203) and (`sales`.`sdate` > '2024-09-30'
+        AND `sales`.`sdate` < '2024-10-31');
+
+
+
+
 
 
 
